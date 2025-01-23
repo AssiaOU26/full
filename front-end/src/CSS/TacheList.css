@@ -1,0 +1,52 @@
+.tache-list {
+    padding: 20px;
+}
+
+.tache-list h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tache-list .btn {
+    margin-bottom: 20px;
+}
+
+.tache-list table {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tache-list table th {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.tache-list table td {
+    color: #333;
+}
+
+.tache-list table button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.tache-list table button:hover {
+    background-color: #3f51b5;
+}
+
+/* Boutons de déconnexion et retour */
+.tache-list .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tache-list .action-buttons .btn {
+    width: auto;
+}

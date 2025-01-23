@@ -1,0 +1,31 @@
+.tache-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tache-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tache-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Bouton de retour */
+.tache-form .btn-back {
+    background-color: #6c757d;
+    margin-right: 10px;
+}
+
+.tache-form .btn-back:hover {
+    background-color: #5a6268;
+}
