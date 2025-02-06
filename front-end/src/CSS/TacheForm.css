@@ -1,31 +1,108 @@
-.tache-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* .tache-form {
+    min-height: 100vh;
+    background-image: url('bgTachesé.png');
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 30px;
+    margin: 0; 
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: Static;
+}  */
+
+.tache-form{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px; 
+    background: #ee8f01;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.5s ease-in-out;
+    font-family: 'Inter', sans-serif;
 }
 
 .tache-form h2 {
-    color: #333;
-    margin-bottom: 20px;
+    
+    color: #fffdff;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
 }
 
-.tache-form .btn {
+.tache-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 18px;
+}
+
+.tache-form input[type="text"],
+.tache-form textarea,
+.tache-form select {
     width: 100%;
     padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #333;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.tache-form input[type="text"]:focus,
+.tache-form textarea:focus,
+.tache-form select:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+    background: #fff;
+}
+
+.tache-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.tache-form button {
+    width: 100%;
+    padding: 14px;
     font-size: 16px;
-    margin-top: 10px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ee8f01;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Bouton de retour */
-.tache-form .btn-back {
-    background-color: #6c757d;
-    margin-right: 10px;
+.tache-form button:hover {
+    background-color: #5a6fd1;
+    transform: translateY(-2px);
 }
 
-.tache-form .btn-back:hover {
-    background-color: #5a6268;
+.tache-form button:active {
+    transform: translateY(0);
+}
+
+.error-message {
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

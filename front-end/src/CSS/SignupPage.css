@@ -3,23 +3,45 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #5c6bc0, #3f51b5);
+    background-image: url('SVG4.png'); /* Chemin de l'image */
+    background-position: center; /* Centre l'image */
+    background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* Hauteur de la vue (viewport height) */
+    margin: 0; /* Supprime la marge par défaut */
+    font-family: 'Inter', sans-serif;
 }
 
-.signup-page .form-container {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
+ /* .signup-page .form-container {
+    background: hsla(59, 98%, 50%, 0.5);
+     padding: 40px;
+    border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
     animation: fadeIn 0.5s ease-in-out;
-}
+}  */
+.signup-page .form-container {
+        background: hsla(51, 85%, 51%, 0.5);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        animation: fadeIn 0.6s ease-in-out;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
 
 .signup-page h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    
+        text-align: center;
+        margin-bottom: 25px;
+        color: #fcf5f5;
+        font-size: 30px;
+        font-weight: 700;
+    
 }
 
 .signup-page .btn {
@@ -27,9 +49,57 @@
     padding: 12px;
     font-size: 16px;
     margin-top: 10px;
+    color: #fdf2f2;
 }
 
 .signup-page p {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
+    color: #070707;
+}
+
+.signup-page a {
+    color: #8213c2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.signup-page a:hover {
+    color: #fff;
+}
+.signup-page label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e49606;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.signup-page .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #f0c91d;
+    color: #8213c2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.signup-page .btn:hover {
+    background-color: #8213c2;
+    transform: translateY(-2px);
+    color: #f5c906;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

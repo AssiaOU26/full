@@ -3,33 +3,110 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #5c6bc0, #3f51b5);
+    /* background: linear-gradient(135deg, #667eea, #764ba2); */
+    background-image: url('SVG4.png'); /* Chemin de l'image */
+    background-position: center; /* Centre l'image */
+    background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* Hauteur de la vue (viewport height) */
+    margin: 0; /* Supprime la marge par défaut */
+    font-family: 'Inter', sans-serif;
 }
 
 .login-page .form-container {
-    background: #fff;
+background: hsla(51, 85%, 51%, 0.5);
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.6s ease-in-out;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .login-page h2 {
     text-align: center;
+    margin-bottom: 25px;
+    color: #fcf5f5;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login-page label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e49606;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-page input {
+    width: 100%;
+    padding: 12px;
     margin-bottom: 20px;
-    color: #333;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+}
+
+.login-page input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+    background: #fff;
 }
 
 .login-page .btn {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
+    padding: 14px;
+    font-size: 18px;
     margin-top: 10px;
+    background-color: #f0c91d;
+    color: #8213c2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-page .btn:hover {
+    background-color: #8213c2;
+    transform: translateY(-2px);
+    color: #f5c906;
+}
+
+.login-page .btn:active {
+    transform: translateY(0);
 }
 
 .login-page p {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
+    color: #0c0c0c;
+    font-size: 14px;
+}
+
+.login-page a {
+    color: #8213c2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-page a:hover {
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,52 +1,203 @@
+/* .tache-list {
+     display: flex; 
+     justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-image: url('bgTachesé.png'); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: 'Inter', sans-serif;
+} */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 .tache-list {
-    padding: 20px;
+    min-height: 100vh;
+    background-image: url('bgTachesé.png');
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 30px;
+    margin: 0; 
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: Static;
 }
 
 .tache-list h2 {
-    color: #333;
-    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.tache-list .btn {
-    margin-bottom: 20px;
-}
 
-.tache-list table {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.tache-list table th {
-    background-color: #5c6bc0;
-    color: #fff;
-}
-
-.tache-list table td {
-    color: #333;
-}
-
-.tache-list table button {
-    padding: 5px 10px;
-    margin-right: 5px;
-    font-size: 14px;
-    border-radius: 5px;
+/* .tache-list .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
     border: none;
-    background-color: #5c6bc0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #0824a5;
     color: #fff;
+    margin-bottom: 20px;
 }
 
-.tache-list table button:hover {
-    background-color: #3f51b5;
+.tache-list .btn:hover {
+    background-color: #5a6fd1;
+    transform: translateY(-2px);
 }
 
-/* Boutons de déconnexion et retour */
+.tache-list .btn:active {
+    transform: translateY(0);
+}
+
 .tache-list .action-buttons {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .tache-list .action-buttons .btn {
-    width: auto;
+    background-color: #1131c4;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.tache-list .action-buttons .btn:hover {
+    background-color: #5a6fd1;
+} */
+
+.tache-list .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    outline: none;
+    background: linear-gradient(135deg, #6a11cb, #e0f803);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.tache-list .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Active effect */
+.tache-list .btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.tache-list table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tache-list table th,
+.tache-list table td {
+    padding: 20px;
+    text-align: left;
+    background-color: #fffffe;
+}
+
+.tache-list table th {
+    background-color: #ee8f01;
+    color: #043a9e;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.tache-list table td {
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tache-list table tr:last-child td {
+    border-bottom: none;
+}
+
+.tache-list table button {
+    padding: 8px 19px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.tache-list table button:hover {
+    background-color: #d80909;
+    transform: translateY(-2px);
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.tache-list table button:active {
+    transform: translateY(0);
+}
+
+.tache-list table button:first-child {
+    padding: 8px 19px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #0c0c0c;
+    margin-right: 8px;
+}
+
+.tache-list table button:first-child:hover {
+    background-color: #017023;
+    color: #ffff;
+    transition:all 0.5s ease-in-out;
+}
+.tache-list table button:last-child {
+    padding: 8px 19px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #0c0c0c;
+    margin-right: 8px;
+}
+.tache-list table button:last-child:hover {
+    background-color: #0c007a;
+    color: #ffff;
+    transition:all 0.5s ease-in-out;
+}
+
+.tache-list p {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    margin-top: 20px;
 }
