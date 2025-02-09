@@ -4,17 +4,23 @@
     align-items: center;
     height: 100vh;
     /* background: linear-gradient(135deg, #667eea, #764ba2); */
-    background-image: url('SVG4.png'); /* Chemin de l'image */
-    background-position: center; /* Centre l'image */
-    background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    height: 100vh; /* Hauteur de la vue (viewport height) */
-    margin: 0; /* Supprime la marge par défaut */
+    background-image: url('SVG4.png');
+    /* Chemin de l'image */
+    background-position: center;
+    /* Centre l'image */
+    background-size: cover;
+    /* Redimensionne l'image pour couvrir toute la zone */
+    background-repeat: no-repeat;
+    /* Empêche la répétition de l'image */
+    height: 100vh;
+    /* Hauteur de la vue (viewport height) */
+    margin: 0;
+    /* Supprime la marge par défaut */
     font-family: 'Inter', sans-serif;
 }
 
 .login-page .form-container {
-background: hsla(51, 85%, 51%, 0.5);
+    background: hsla(51, 85%, 51%, 0.5);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -105,6 +111,7 @@ background: hsla(51, 85%, 51%, 0.5);
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

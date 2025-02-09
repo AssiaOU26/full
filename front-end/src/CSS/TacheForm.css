@@ -1,91 +1,93 @@
-/* .tache-form {
+.tache-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-image: url('bgTachesé.png');
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    padding: 30px;
-    margin: 0; 
-    font-family: "Rubik", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: Static;
-}  */
-
-.tache-form{
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px; 
-    background: #ee8f01;
-    border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
     font-family: 'Inter', sans-serif;
 }
 
-.tache-form h2 {
-    
-    color: #fffdff;
+.tache-form-card {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background-color: #ee8f01;
+    color: #043a9e;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tache-form-card h2 {
+    color: #333;
     margin-bottom: 25px;
     font-size: 28px;
     font-weight: 700;
     text-align: center;
 }
 
-.tache-form label {
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
     margin-bottom: 8px;
     color: #555;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.tache-form input[type="text"],
-.tache-form textarea,
-.tache-form select {
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
     width: 100%;
     padding: 12px;
-    margin-bottom: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    font-size: 17px;
+    font-size: 16px;
     color: #333;
     background: #f9f9f9;
     transition: all 0.3s ease;
 }
 
-.tache-form input[type="text"]:focus,
-.tache-form textarea:focus,
-.tache-form select:focus {
+.form-group input[type="text"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
     border-color: #667eea;
     outline: none;
     box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
-    background: #fff;
+    background: #ffffff;
 }
 
-.tache-form textarea {
+.form-group textarea {
     resize: vertical;
     min-height: 120px;
 }
 
-.tache-form button {
+.submit-button {
     width: 100%;
     padding: 14px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
-    background-color: #ee8f01;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.tache-form button:hover {
+.submit-button:hover {
     background-color: #5a6fd1;
     transform: translateY(-2px);
 }
 
-.tache-form button:active {
+.submit-button:active {
     transform: translateY(0);
 }
 
@@ -101,8 +103,15 @@
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.tache-list .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }

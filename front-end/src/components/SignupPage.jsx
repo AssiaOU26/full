@@ -113,7 +113,7 @@ const SignupPage = ({ setToken }) => {
             />
           </div>
           <button type="submit" className="btn">
-            S'inscrire
+            S inscrire
           </button>
         </form>
         <p>

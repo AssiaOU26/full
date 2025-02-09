@@ -14,8 +14,9 @@ const LoginPage = ({ setToken }) => {
     e.preventDefault();
     try {
       const response = await login(email, password);
-      setToken(response.data.token);
-      localStorage.setItem("token", response.data.token);
+      const token = response.data.token;
+      setToken(token);
+      localStorage.setItem("token", token); // Stocker le token dans le localStorage
       navigate("/taches");
     } catch (err) {
       console.error("Erreur lors de la connexion :", err);
@@ -27,7 +28,9 @@ const LoginPage = ({ setToken }) => {
     <div className="login-page">
       <div className="form-container">
         <h2>Connexion</h2>
-        {error && <p style={{ color: "#ff4d4d", textAlign: "center" }}>{error}</p>}
+        {error && (
+          <p style={{ color: "#ff4d4d", textAlign: "center" }}>{error}</p>
+        )}
         <form onSubmit={handleSubmit}>
           <div>
             <label>Email :</label>
@@ -51,10 +54,12 @@ const LoginPage = ({ setToken }) => {
               placeholder="Entrez votre mot de passe"
             />
           </div>
-          <button type="submit" className="btn">Se connecter</button>
+          <button type="submit" className="btn">
+            Se connecter
+          </button>
         </form>
         <p>
-          Pas de compte ? <a href="/signup">S'inscrire</a>
+          Pas de compte ? <a href="/signup">S inscrire</a>
         </p>
       </div>
     </div>

@@ -16,11 +16,11 @@
 .tache-list {
     min-height: 100vh;
     background-image: url('bgTachesé.png');
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 30px;
-    margin: 0; 
+    margin: 0;
     font-family: "Rubik", serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -177,8 +177,9 @@
 .tache-list table button:first-child:hover {
     background-color: #017023;
     color: #ffff;
-    transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
+
 .tache-list table button:last-child {
     padding: 8px 19px;
     font-size: 14px;
@@ -189,10 +190,11 @@
     color: #0c0c0c;
     margin-right: 8px;
 }
+
 .tache-list table button:last-child:hover {
     background-color: #0c007a;
     color: #ffff;
-    transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .tache-list p {
